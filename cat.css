@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav{
+  background-color: #67595E;
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  padding-top:0.7rem;
+}
+
+.emotion:hover, .emotion-cnt > label:hover{
+  cursor: pointer;
+}
+
+.emotion-cnt > label{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex:1;
+}
+
+
+h1, h2{
+    color: #EED6D3;
+    margin: 0;
+}
+
+h1{
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.comp-2 label{
+  font-size: 14px;
+  
+}
+
+.input-wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+
+.comp-2{
+  width: min(200px, 100%)
+}
+
+.emotions-cnt{
+   border: solid 1px rgb(160, 159, 159);
+   border-bottom: none;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+div .no-border{
+  border:none;
+}
+
+.emotion-cnt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  border-bottom: solid 1px rgb(160, 159, 159);
+  width: 100%;
+  height: 40px;
+  padding: 0 0.5rem;
+}
+
+.get-image-btn{
+  background-color: #67595E;
+  color: #EED6D3;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 24px;
+  padding: 1rem;
+  border:none;
+  border-radius: 5px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.get-image-btn:hover{
+  cursor: pointer;
+  color: #67595E;
+  background-color: #EED6D3;
+}
+
+.get-image-btn:active{
+  opacity: 0.7;
+}
+  
+
+.emotion-text{
+  text-align: center;
+}
+
+.cat-logo{
+  width: 70px;
+}
+
+.title-text{
+  align-self: center;
+}
+
+.cat-logo-img{
+  width: 100%;
+  display: block;
+}
+
+
+
+.emotion-cnt:has(.emotion:checked){
+  background-color: rgb(235, 199, 199);
+  font-weight: 800;
+  color: rgb(212, 16, 16);
+}
+
+.emotion:checked{
+  accent-color: rgb(212, 16, 16);
+}
+
+input[type="radio"]:focus{
+  outline: solid 5px rgb(224, 113, 113);
+  outline-offset: 2px;
+}
+
